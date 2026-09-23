@@ -1,0 +1,8 @@
+- type: entity
+  parent: [ClothingUniformBase]
+  id: EmrPolevay
+  name: EmrPolevay
+  description: EmrPolevay
+  components:
+  - type: Sprite
+    sprite: KSR/EmrPolevay.rsi
