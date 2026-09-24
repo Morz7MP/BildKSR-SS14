@@ -1,4 +1,4 @@
-<span style="color: green;">ЧТО НУЖНО СДЕЛАТЬ В ДАННЫЙ МОМЕНТ:</span>
+<span style="color: blue;">ЧТО НУЖНО СДЕЛАТЬ В ДАННЫЙ МОМЕНТ:</span>
 ...
 
 <span style="color: green;">ЗАНЯТОСТЬ:</span>
