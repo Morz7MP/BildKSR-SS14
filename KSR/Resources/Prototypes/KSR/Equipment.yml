@@ -6,3 +6,12 @@
   components:
   - type: Sprite
     sprite: KSR/EmrPolevay.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: Test
+  name: Test
+  description: Test
+  components:
+  - type: Sprite
+    sprite: KSR/Test.rsi
