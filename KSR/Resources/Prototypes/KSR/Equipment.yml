@@ -6,3 +6,12 @@
   components:
   - type: Sprite
     sprite: KSR/EmrPolevay.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: Povsednevnay
+  name: Povsednevnay
+  description: Povsednevnay
+  components:
+  - type: Sprite
+    sprite: KSR/Povsednevnay.rsi
