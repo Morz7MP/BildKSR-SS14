@@ -23,5 +23,5 @@
   description: Sos
   components:
   - type: Sprite
-    sprite: KSR/Sos
+    sprite: KSR/Sos.rsi
     
