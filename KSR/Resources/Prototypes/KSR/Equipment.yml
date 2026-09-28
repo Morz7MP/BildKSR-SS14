@@ -15,13 +15,3 @@
   components:
   - type: Sprite
     sprite: KSR/Povsednevnay.rsi
-
-- type: entity
-  parent: [ClothingUniformBase]
-  id: Sos 
-  name: Sos
-  description: Sos
-  components:
-  - type: Sprite
-    sprite: KSR/Sos.rsi
-    
