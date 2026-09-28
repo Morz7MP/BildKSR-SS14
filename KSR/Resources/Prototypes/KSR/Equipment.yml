@@ -15,21 +15,3 @@
   components:
   - type: Sprite
     sprite: KSR/Povsednevnay.rsi
-    
-- type: entity
-  parent: [ClothingUniformBase]
-  id: EmrPolevayBlue
-  name: EmrPolevayBlue
-  description: EmrPolevayBlue
-  components:
-  - type: Sprite
-    sprite: KSR/EmrPolevayBlue.rsi
-
-- type: entity
-  parent: [ClothingUniformBase]
-  id: SiniyEmrPolevay
-  name: SiniyEmrPolevay
-  description: SiniyEmrPolevay
-  components:
-  - type: Sprite
-    sprite: KSR/SiniyEmrPolevay.rsi
