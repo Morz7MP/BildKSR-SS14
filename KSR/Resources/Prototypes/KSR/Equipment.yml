@@ -25,7 +25,7 @@
   - type: Sprite
     sprite: KSR/EmrPolevayBlue.rsi
 
-type: entity
+- type: entity
   parent: [ClothingUniformBase]
   id: SiniyEmrPolevay
   name: SiniyEmrPolevay
