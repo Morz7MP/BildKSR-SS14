@@ -15,12 +15,3 @@
   components:
   - type: Sprite
     sprite: KSR/Povsednevnay.rsi
-
-- type: entity
-  parent: [ClothingUniformBase]
-  id: EmrSiniy
-  name: EmrSiniy
-  description: EmrSiniy
-  components:
-  - type: Sprite
-    sprite: KSR/EmrSiniy.rsi
