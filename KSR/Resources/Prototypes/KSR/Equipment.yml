@@ -25,7 +25,7 @@
   - type: Sprite
     sprite: KSR/FloraPolevay.rsi
 
-    - type: entity
+- type: entity
   parent: [ClothingUniformBase]
   id: BlueUniformOfMedical
   name: BlueUniformOfMedical
@@ -33,4 +33,3 @@
   components:
   - type: Sprite
     sprite: KSR/BlueUniformOfMedical.rsi
-
