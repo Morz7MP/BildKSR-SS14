@@ -33,3 +33,12 @@
   components:
   - type: Sprite
     sprite: KSR/BlueUniformOfMedical.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: FormaOsuzhdennogo
+  name: FormaOsuzhdennogo
+  description: FormaOsuzhdennogo
+  components:
+  - type: Sprite
+    sprite: KSR/FormaOsuzhdennogo.rsi
