@@ -33,6 +33,17 @@
   components:
   - type: Sprite
     sprite: KSR/BlueUniformOfMedical.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: KSR/BlueUniformOfMedical.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: [ClothingUniformBase]
