@@ -42,3 +42,14 @@
   components:
   - type: Sprite
     sprite: KSR/FormaOsuzhdennogo.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: KSR/FormaOsuzhdennogo.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
