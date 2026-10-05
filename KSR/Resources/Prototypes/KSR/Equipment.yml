@@ -64,3 +64,12 @@
       - state: equipped-INNERCLOTHING
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: EmrSiniyPolevay
+  name: EmrSiniyPolevay
+  description: EmrSiniyPolevay
+  components:
+  - type: Sprite
+    sprite: KSR/EmrSiniyPolevay.rsi
