@@ -18,3 +18,6 @@ ent-EmrSiniyPolevay = Полевая форма "ЕМР" синий
 
 ent-RedBlueUniformOfMedical = Форма санитара
     .desc = Медицинская форма красного цвета.
+
+ent-FormaSlesara = Форма слесаря
+.desc = Старая форма слесаря удобная для сложного труда 
