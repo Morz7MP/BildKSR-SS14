@@ -73,3 +73,23 @@
   components:
   - type: Sprite
     sprite: KSR/EmrSiniyPolevay.rsi
+
+    - type: entity
+  parent: [ClothingUniformBase]
+  id: RedUniformOfMedical
+  name: RedUniformOfMedical
+  description: RedUniformOfMedical
+  components:
+  - type: Sprite
+    sprite: KSR/RedUniformOfMedical.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: KSR/RedUniformOfMedical.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
