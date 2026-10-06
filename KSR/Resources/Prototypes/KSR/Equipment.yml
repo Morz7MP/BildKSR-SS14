@@ -101,13 +101,13 @@
   description: FormaSlesara
   components:
   - type: Sprite
-    sprite: KSR\Resources\Textures\KSR\Cyc.rsi
+    sprite: KSR\Resources\Textures\KSR\FormaSlesara.rsi
     layers:
     - state: icon
     - state: icon-unshaded
       shader: unshaded
   - type: Clothing
-    sprite: KSR\Resources\Textures\KSR\Cyc.rsi
+    sprite: KSR\Resources\Textures\KSR\FormaSlesara.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
