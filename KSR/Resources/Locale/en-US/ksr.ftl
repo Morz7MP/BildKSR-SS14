@@ -15,3 +15,6 @@ ent-FormaOsuzhdennogo = Форма осуждённого
 
 ent-EmrSiniyPolevay = Полевая форма "ЕМР" синий
     .desc = Камуфляжная форма ФСИН РФ. Синий вариант. Имеются шевроны 
+
+ent-RedBlueUniformOfMedical = Форма санитара
+    .desc = Медицинская форма бордового цвета.
