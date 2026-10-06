@@ -93,3 +93,23 @@
       - state: equipped-INNERCLOTHING
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+
+ - type: entity
+  parent: [ClothingUniformBase]
+  id: FormaSlesara
+  name: FormaSlesara
+  description: FormaSlesara
+  components:
+  - type: Sprite
+    sprite: KSR\Resources\Textures\KSR\Cyc.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: KSR\Resources\Textures\KSR\Cyc.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
