@@ -94,7 +94,7 @@
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
 
- - type: entity
+- type: entity
   parent: [ClothingUniformBase]
   id: FormaSlesara
   name: FormaSlesara
