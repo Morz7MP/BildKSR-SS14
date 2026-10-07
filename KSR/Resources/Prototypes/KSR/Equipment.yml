@@ -101,13 +101,13 @@
   description: FormaSlesara
   components:
   - type: Sprite
-    sprite: KSR/RedUniformOfMedical.rsi
+    sprite: KSR/FormaSlesara.rsi
     layers:
     - state: icon
     - state: icon-unshaded
       shader: unshaded
   - type: Clothing
-    sprite: KSR/RedUniformOfMedical.rsi
+    sprite: KSR/FormaSlesara.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
