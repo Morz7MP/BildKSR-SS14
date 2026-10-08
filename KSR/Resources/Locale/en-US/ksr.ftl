@@ -21,3 +21,6 @@ ent-RedUniformOfMedical = Форма санитара
 
 ent-FormaSlesara = Форма слесаря
     .desc = Удобная форма для ручного труда.
+
+ent-KepaEmr = Кепа "ЕМР"
+    .desc = Камуфляжная кепа ВСРФ с кокардой.
