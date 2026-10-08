@@ -113,3 +113,12 @@
       - state: equipped-INNERCLOTHING
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+
+- type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: KepaEmr
+  name: KepaEmr
+  description: KepaEmr
+  components:
+  - type: Sprite
+    sprite: KSR/KepaEmr.rsi
