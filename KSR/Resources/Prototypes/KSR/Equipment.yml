@@ -140,4 +140,13 @@
         Heat: 0.85
   - type: HideLayerClothing
     layers:
-      Hair: HEAD
+      Hair: HEAD 
+      
+- type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: KepaBlueEmr
+  name: KepaBlueEmr
+  description: KepaBlueEmr
+  components:
+  - type: Sprite
+    sprite: KSR/KepaBlueEmr.rsi
