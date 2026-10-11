@@ -150,3 +150,12 @@
   components:
   - type: Sprite
     sprite: KSR/KepaBlueEmr.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: Beret
+  name: Beret
+  description: Beret
+  components:
+  - type: Sprite
+    sprite: KSR/Beret.rsi
