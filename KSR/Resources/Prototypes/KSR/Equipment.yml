@@ -159,3 +159,12 @@
   components:
   - type: Sprite
     sprite: KSR/Beret.rsi
+
+- type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: KepaSanitara
+  name: KepaSanitara
+  description: KepaSanitara
+  components:
+  - type: Sprite
+    sprite: KSR/KepaSanitara.rsi
