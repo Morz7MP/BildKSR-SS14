@@ -187,3 +187,11 @@
   - type: Sprite
     sprite: KSR/Furazka.rsi
 
+- type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: KepaFlora
+  name: KepaFlora
+  description: KepaFlora
+  components:
+  - type: Sprite
+    sprite: KSR/KepaFlora.rsi
