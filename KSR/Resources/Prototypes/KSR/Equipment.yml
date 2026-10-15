@@ -177,3 +177,13 @@
   components:
   - type: Sprite
     sprite: KSR/KepaSanitaraSiniya.rsi    
+
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: Furazka
+  name: Furazka
+  description: Furazka
+  components:
+  - type: Sprite
+    sprite: KSR/Furazka.rsi
+
