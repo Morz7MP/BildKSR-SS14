@@ -39,3 +39,6 @@ ent-KepaSanitara = Кепа санитара
 
 ent-KepaSanitaraSiniya = Кепа санитара
     .desc = Синия кепа санитара.	
+
+ent-Furazka = Фуражка ФСИН
+    .desc = Фуражка ФСИН, больше ничего.
