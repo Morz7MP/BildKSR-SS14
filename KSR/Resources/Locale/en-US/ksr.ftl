@@ -42,3 +42,6 @@ ent-KepaSanitaraSiniya = Кепа санитара
 
 ent-Furazka = Фуражка ФСИН
     .desc = Фуражка ФСИН, больше ничего.
+
+ent-KepaFlora = Кепа "Флора"
+    .desc = Камуфляжная кепа ФСИН "Флора".
