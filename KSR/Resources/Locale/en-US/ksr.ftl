@@ -36,3 +36,6 @@ ent-Beret = Серо-синий берет
 
 ent-KepaSanitara = Кепа санитара
     .desc = Красная кепа санитара.
+
+ent-KepaSanitaraSiniya = Кепа санитара
+    .desc = Синия кепа санитара.	
