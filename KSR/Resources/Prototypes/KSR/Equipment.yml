@@ -195,3 +195,12 @@
   components:
   - type: Sprite
     sprite: KSR/KepaFlora.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: PilotkaFSIN
+  name: PilotkaFSIN
+  description: PilotkaFSIN
+  components:
+  - type: Sprite
+    sprite: KSR/PilotkaFSIN.rsi
