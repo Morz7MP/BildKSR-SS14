@@ -205,7 +205,7 @@
   - type: Sprite
     sprite: KSR/PilotkaFSIN.rsi
 
- - type: entity
+- type: entity
   parent: ClothingHeadHeadHatBaseFlippable
   id: KepaOsuzhdennogo
   name: KepaOsuzhdennogo
