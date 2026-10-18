@@ -204,3 +204,12 @@
   components:
   - type: Sprite
     sprite: KSR/PilotkaFSIN.rsi
+
+ - type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: KepaOsuzhdennogo
+  name: KepaOsuzhdennogo
+  description: KepaOsuzhdennogo
+  components:
+  - type: Sprite
+    sprite: KSR/KepaOsuzhdennogo.rsi   
