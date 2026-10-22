@@ -212,3 +212,23 @@
   components:
   - type: Sprite
     sprite: KSR/KepaOsuzhdennogo.rsi   
+
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: Kolpak_K-1_SB
+  name: Kolpak_K-1_SB
+  description: Kolpak_K-1_SB
+  components:
+  - type: Sprite
+    sprite: KSR/Kolpak_K-1_SB.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.85
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD 
+
