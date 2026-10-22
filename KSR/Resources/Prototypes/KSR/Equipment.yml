@@ -135,9 +135,8 @@
     modifiers:
       coefficients:
         Blunt: 0.85
-        Slash: 0.85
-        Piercing: 0.85
-        Heat: 0.85
+        Slash: 0.8
+        Piercing: 0.8
   - type: HideLayerClothing
     layers:
       Hair: HEAD 
