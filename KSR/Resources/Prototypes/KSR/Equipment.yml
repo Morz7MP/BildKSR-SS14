@@ -214,7 +214,7 @@
     sprite: KSR/KepaOsuzhdennogo.rsi
 
 - type: entity
-  parent: ClothingHeadHelmetBase
+  parent: ClothingHeadHeadHatBaseFlippable
   id: Kolpak_K-1_SB
   name: Kolpak_K-1_SB
   description: Kolpak_K-1_SB
