@@ -211,7 +211,7 @@
   description: KepaOsuzhdennogo
   components:
   - type: Sprite
-    sprite: KSR/KepaOsuzhdennogo.rsi   
+    sprite: KSR/KepaOsuzhdennogo.rsi
 
 - type: entity
   parent: ClothingHeadHelmetBase
@@ -230,5 +230,24 @@
         Heat: 0.85
   - type: HideLayerClothing
     layers:
-      Hair: HEAD 
+      Hair: HEAD
 
+- type: entity
+  parent: [ClothingOuterArmorBasic]
+  id: 6b45
+  name: 6b45
+  description: 6b45
+  components:
+  - type: Sprite
+    sprite: KSR/6b45.rsi
+  - type: Clothing
+    sprite: KSR/6b45.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.75
+        Piercing: 0.65
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
