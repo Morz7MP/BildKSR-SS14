@@ -224,9 +224,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.85
+        Blunt: 0.75
         Slash: 0.85
-        Piercing: 0.85
+        Piercing: 0.9
         Heat: 0.85
   - type: HideLayerClothing
     layers:
