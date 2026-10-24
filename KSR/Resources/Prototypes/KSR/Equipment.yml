@@ -233,7 +233,7 @@
       Hair: HEAD
 
 - type: entity
-  parent: [ClothingOuterArmorBasic]
+  parent: ClothingOuterBase
   id: 6b45
   name: 6b45
   description: 6b45
@@ -254,7 +254,7 @@
 
    
 - type: entity
-  parent: ClothingOuterArmorBasic
+  parent: ClothingOuterBase
   id: Kitel
   name: Kitel
   description: Kitel
@@ -263,3 +263,15 @@
     sprite: KSR/Kitel.rsi
   - type: Clothing
     sprite: KSR/Kitel.rsi
+  - type: Storage
+    grid:
+    - 0,0,1,1
+    maxItemSize: Small
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
