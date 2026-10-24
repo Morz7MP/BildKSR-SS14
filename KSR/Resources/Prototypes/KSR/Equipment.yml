@@ -251,3 +251,23 @@
         Heat: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.85
+
+    - type: entity
+  parent: ClothingOuterArmorBasic
+  id: Tunicblue9633
+  name: Китель
+  description: кителя офицеров органов федеральной службы безопасности
+  components:
+  - type: Sprite
+    sprite: KSR/Tunicblue.rsi
+  - type: Clothing
+    sprite: KSR/Tunicblue.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.75
+        Piercing: 0.65
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
