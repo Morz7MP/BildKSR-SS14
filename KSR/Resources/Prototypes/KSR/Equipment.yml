@@ -275,3 +275,13 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Bersi
+  name: Bersi
+  components:
+  - type: Sprite
+    sprite: KSR/Bersi.rsi
+  - type: Clothing
+    sprite: KSR/Bersi.rsi
