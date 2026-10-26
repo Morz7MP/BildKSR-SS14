@@ -285,3 +285,13 @@
     sprite: KSR/Bersi.rsi
   - type: Clothing
     sprite: KSR/Bersi.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Tufli
+  name: Tufli
+  components:
+  - type: Sprite
+    sprite: KSR/Tufli.rsi
+  - type: Clothing
+    sprite: KSR/Tufli.rsi
