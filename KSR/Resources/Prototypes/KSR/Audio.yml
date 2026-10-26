@@ -1,0 +1,6 @@
+- type: soundCollection
+  id: FootstepBersi
+  files:
+  - /Audio/KSR/FootstepBersi/Bersi1.ogg
+  - /Audio/KSR/FootstepBersi/Bersi2.ogg
+  - /Audio/KSR/FootstepBersi/Bersi3.ogg
