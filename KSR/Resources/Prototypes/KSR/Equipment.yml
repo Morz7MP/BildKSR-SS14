@@ -298,3 +298,13 @@
     sprite: KSR/Tufli.rsi
   - type: Clothing
     sprite: KSR/Tufli.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Raboshieboti
+  name: Raboshieboti
+  components:
+  - type: Sprite
+    sprite: KSR/Raboshieboti.rsi
+  - type: Clothing
+    sprite: KSR/Raboshieboti.rsi
