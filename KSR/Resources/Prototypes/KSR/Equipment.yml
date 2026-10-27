@@ -308,3 +308,10 @@
     sprite: KSR/Raboshieboti.rsi
   - type: Clothing
     sprite: KSR/Raboshieboti.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.97
+        Slash: 0.97
+        Piercing: 0.97
+        Heat: 0.95
