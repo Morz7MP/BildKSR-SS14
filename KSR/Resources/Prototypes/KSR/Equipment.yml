@@ -315,3 +315,16 @@
         Slash: 0.97
         Piercing: 0.97
         Heat: 0.95
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Krossovky
+  name: Krossovky
+  components:
+  - type: Sprite
+    sprite: KSR/Krossovky.rsi
+  - type: Clothing
+    sprite: KSR/Krossovky.rsi
+
+
+
