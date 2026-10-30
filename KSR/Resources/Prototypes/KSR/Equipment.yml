@@ -318,13 +318,13 @@
 
 - type: entity
   parent: ClothingShoesBase
-  id: Krossovky
-  name: Krossovky
+  id: Sneakers
+  name: Sneakers
   components:
   - type: Sprite
-    sprite: KSR/Krossovky.rsi
+    sprite: KSR/Sneakers.rsi
   - type: Clothing
-    sprite: KSR/Krossovky.rsi
+    sprite: KSR/Sneakers.rsi
 
 
 
