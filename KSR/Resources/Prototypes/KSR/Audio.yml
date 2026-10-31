@@ -4,3 +4,10 @@
   - /Audio/KSR/FootstepBersi/Bersi1.ogg
   - /Audio/KSR/FootstepBersi/Bersi2.ogg
   - /Audio/KSR/FootstepBersi/Bersi3.ogg
+
+- type: soundCollection
+  id: FootstepKobluk
+  files:
+  - /Audio/KSR/FootstepKobluk/Kabluk1.ogg
+  - /Audio/KSR/FootstepKobluk/Kabluk2.ogg
+  - /Audio/KSR/FootstepKobluk/Kabluk3.ogg  
