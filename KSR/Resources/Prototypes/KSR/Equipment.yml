@@ -335,4 +335,7 @@
     sprite: KSR/TufliBabi.rsi
   - type: Clothing
     sprite: KSR/TufliBabi.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepKobluk
 
