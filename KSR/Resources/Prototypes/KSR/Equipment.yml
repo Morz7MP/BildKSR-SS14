@@ -326,5 +326,13 @@
   - type: Clothing
     sprite: KSR/Sneakers.rsi
 
-
+- type: entity
+  parent: ClothingShoesBase
+  id: TufliBabi
+  name: TufliBabi
+  components:
+  - type: Sprite
+    sprite: KSR/TufliBabi.rsi
+  - type: Clothing
+    sprite: KSR/TufliBabi.rsi
 
