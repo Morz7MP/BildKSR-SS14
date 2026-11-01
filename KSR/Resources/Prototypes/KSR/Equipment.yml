@@ -339,3 +339,15 @@
     footstepSoundCollection:
       collection: FootstepKobluk
 
+- type: entity
+  parent: ClothingBackpack
+  id: Medsumka
+  name: Medsumka
+  description: Medsumka
+  components:
+  - type: Sprite
+    sprite: KSR/Medsumka.rsi
+  - type: Storage
+    grid:
+    - 0,0,1,3
+    - 3,0,6,3
