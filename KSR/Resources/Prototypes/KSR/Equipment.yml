@@ -233,7 +233,7 @@
       Hair: HEAD
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: [ClothingOuterBase, AllowSuitStorageClothing]
   id: 6b45
   name: 6b45
   description: 6b45
@@ -251,7 +251,6 @@
         Heat: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.85
-
    
 - type: entity
   parent: ClothingOuterBase
@@ -364,4 +363,3 @@
     grid:
     - 0,0,1,3
     - 3,0,6,3
-
