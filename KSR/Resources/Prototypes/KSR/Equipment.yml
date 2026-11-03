@@ -351,3 +351,17 @@
     grid:
     - 0,0,1,3
     - 3,0,6,3
+
+- type: entity
+  parent: ClothingBackpack
+  id: MedsumkaRed
+  name: MedsumkaRed
+  description: MedsumkaRed
+  components:
+  - type: Sprite
+    sprite: KSR/MedsumkaRed.rsi
+  - type: Storage
+    grid:
+    - 0,0,1,3
+    - 3,0,6,3
+
