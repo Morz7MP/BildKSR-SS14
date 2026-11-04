@@ -1,0 +1,28 @@
+- type: entity
+  parent: BaseItem
+  id: Pr73
+  name: Pr73
+  description: Pr73
+  components:
+  - type: Sprite
+    sprite: KSR/Pr73.rsi
+    state: icon
+  - type: Clothing
+    sprite: KSR/Pr73.rsi
+    slots:
+    - Belt
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,0,1
+    storedRotation: -45
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+    bluntStaminaDamageFactor: 6.68
+  - type: DisarmMalus
+    malus: 0.225
