@@ -31,9 +31,7 @@
   name: zatochka
   parent: BaseKnife
   id: zatochka
-  description: A shiv cobbled together from some random rags, a plastic tube, and a piece of scrap metal.
-
-Do you seriously think this will help you against the guards?
+  description: A shiv cobbled together from some random rags, a plastic tube, and a piece of scrap metal. Do you seriously think this will help you against the guards?
   components:
   - type: Tag
     tags:
