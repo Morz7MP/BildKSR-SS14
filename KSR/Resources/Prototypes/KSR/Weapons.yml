@@ -26,6 +26,7 @@
     bluntStaminaDamageFactor: 6.68
   - type: DisarmMalus
     malus: 0.225
+    
 - type: entity
   name: zatochka
   parent: BaseKnife
