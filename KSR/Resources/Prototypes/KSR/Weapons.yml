@@ -36,6 +36,10 @@
   - type: Sprite
     sprite: KSR/Zatochka.rsi
     state: icon
+  - type: Clothing
+    sprite: KSR/Zatochka.rsi
+    slots:
+    - Belt
   - type: MeleeWeapon
     attackRate: 1.5
     damage:
@@ -55,6 +59,10 @@
   - type: Sprite
     sprite: KSR/Htuk_noz.rsi
     state: icon
+  - type: Clothing
+    sprite: KSR/Htuk_noz.rsi
+    slots:
+    - Belt
   - type: MeleeWeapon
     attackRate: 1.5
     damage:
