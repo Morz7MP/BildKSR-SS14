@@ -1,0 +1,123 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "https://github.com/shiptest-ss13/Shiptest/pull/1602/commits/3e6cfea9d468508a7f64ad5543c3b22479cb465f , https://github.com/shiptest-ss13/Shiptest/blob/master/icons/obj/ammo.dmi, inhands by TiniestShark (GitHub), stripes by SeamLesss (GitHub)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "stripe"
+        },
+        {
+            "name": "mag-1"
+        },
+		{
+            "name": "mag-2"
+        },
+		{
+            "name": "mag-3"
+        },
+		{
+            "name": "mag-4"
+        },
+		{
+            "name": "mag-5"
+        },
+		{
+            "name": "mag-6"
+        },
+		{
+            "name": "mag-7"
+        },
+		{
+            "name": "mag-8"
+        },
+		{
+            "name": "mag-9"
+        },
+		{
+            "name": "mag-10"
+        },
+		{
+            "name": "mag-11"
+        },
+		{
+            "name": "mag-12"
+        },
+		{
+            "name": "mag-13"
+        },
+		{
+            "name": "mag-14"
+        },
+		{
+            "name": "mag-15"
+        },
+		{
+            "name": "mag-16"
+        },
+		{
+            "name": "mag-17"
+        },
+		{
+            "name": "mag-18"
+        },
+		{
+            "name": "mag-19"
+        },
+		{
+            "name": "mag-20"
+        },
+		{
+            "name": "mag-21"
+        },
+		{
+            "name": "mag-22"
+        },
+		{
+            "name": "mag-23"
+        },
+		{
+            "name": "mag-24"
+        },
+		{
+            "name": "mag-25"
+        },
+		{
+            "name": "mag-26"
+        },
+		{
+            "name": "mag-27"
+        },
+		{
+            "name": "mag-28"
+        },
+		{
+            "name": "mag-29"
+        },
+		{
+            "name": "mag-30"
+        },
+        {
+            "name": "inhand-left-mag",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left-stripe",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right-mag",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right-stripe",
+            "directions": 4
+        }
+    ]
+}
