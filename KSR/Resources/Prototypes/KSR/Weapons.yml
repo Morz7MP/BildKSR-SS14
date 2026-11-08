@@ -12,7 +12,7 @@
     slots:
     - Belt
   - type: Item
-    size: Large
+    size: Small
     shape:
     - 0,0,0,1
     storedRotation: -45
@@ -102,3 +102,120 @@
       - ItemMask
       restitution: 0.3
       friction: 0.2
+
+- type: entity
+  parent: BaseWeaponRifle
+  id: Ak74m
+  name: Ak74m
+  description: Ak74m
+  components:
+  - type: Sprite
+    sprite: KSR/Ak74m.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: KSR/Ak74m.rsi
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -16
+  - type: Gun
+    angleIncrease: 1.5
+    angleDecay: 9.5
+    fireRate: 10
+    availableModes: 
+      - SemiAuto
+      - FullAuto
+    soundGunshot:
+      path: /Audio/KSR/Ak74m/vistrel.ogg
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/KSR/Ak74m/zatvor.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: 6l23
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - 6l23
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - 54539
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazineLightRifle
+  id: 6l23
+  name: 6l23
+  description: 6l23
+  components:
+  - type: BallisticAmmoProvider
+    proto: 54539
+    capacity: 30
+    whitelist:
+      tags:
+        - 54539
+  - type: Item
+  - type: Sprite
+    sprite: KSR/6l23.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 31
+    zeroVisible: false
+  - type: Appearance
+  - type: Tag
+    tags:
+      - 6l23
+
+- type: entity
+  parent: BaseCartridgeLightRifle
+  id: 54539
+  name: 54539
+  description: 54539
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet54539
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
+  - type: Tag
+    tags:
+      - 54539
+      - Cartridge
+
+- type: entity
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  id: Bullet54539
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 12
