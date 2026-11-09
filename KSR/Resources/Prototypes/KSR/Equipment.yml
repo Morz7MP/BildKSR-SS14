@@ -363,3 +363,42 @@
     grid:
     - 0,0,1,3
     - 3,0,6,3
+
+- type: entity
+  parent: BaseLargeShield
+  id: Chp1
+  name: Chp1
+  description: Chp1
+  components:
+  - type: Sprite
+    sprite: KSR/Chp1.rsi
+    state: icon
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        sprite: KSR/Chp1.rsi
+      right:
+      - state: inhand-right
+        sprite: KSR/Chp1.rsi
+  - type: Blocking
+    passiveBlockModifier:
+      flatReductions:
+        Blunt: 18
+        Slash: 18
+        Piercing: 2
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound: /Audio/Items/trayhit2.ogg
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            SheetSteel:
+              min: 2
+              max: 3
