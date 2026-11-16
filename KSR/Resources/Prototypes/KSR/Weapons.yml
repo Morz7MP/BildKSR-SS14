@@ -197,3 +197,65 @@
     damage:
       types:
         Piercing: 12
+
+- type: entity
+  parent: BaseWeaponRifle
+  id: Aks74u
+  name: Aks74u
+  description: Aks74u
+  components:
+  - type: Sprite
+    sprite: KSR/Aks74u.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: KSR/Aks74u.rsi
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,1
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -16
+  - type: Gun
+    angleIncrease: 2.2
+    angleDecay: 8.5
+    fireRate: 10
+    availableModes: 
+      - SemiAuto
+      - FullAuto
+    soundGunshot:
+      path: /Audio/KSR/Ak74m/vistrel.ogg
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/KSR/Ak74m/zatvor.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: 6l23
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - 6l23
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - 54539
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
