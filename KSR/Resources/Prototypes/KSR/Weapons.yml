@@ -259,3 +259,126 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+
+- type: entity
+  parent: BaseWeaponRifle
+  id: Svd
+  name: Svd
+  description: Svd
+  components:
+  - type: Sprite
+    sprite: KSR/Svd.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,5,1
+  - type: Clothing
+    sprite: KSR/Svd.rsi
+  - type: GunWieldBonus
+    angleIncrease: -2.9
+  - type: Gun
+    angleIncrease: 3.0
+    angleDecay: 1.5
+    fireRate: 5
+    availableModes: 
+      - SemiAuto
+    selectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/KSR/svd/vistrel.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/KSR/Ak74m/zatvor.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magsvd
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magsvd
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - 76254r
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 3
+    pvsIncrease: 0.3
+
+- type: entity
+  parent: BaseMagazineLightRifle
+  id: Magsvd
+  name: Magsvd
+  description: Magsvd
+  components:
+  - type: BallisticAmmoProvider
+    proto: 76254r
+    capacity: 10
+    whitelist:
+      tags:
+        - 76254r
+  - type: Item
+  - type: Sprite
+    sprite: KSR/Magsvd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 11
+    zeroVisible: false
+  - type: Appearance
+  - type: Tag
+    tags:
+      - Magsvd
+
+- type: entity
+  parent: BaseCartridgeLightRifle
+  id: 76254r
+  name: 76254r
+  description: 76254r
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet76254r
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
+  - type: Tag
+    tags:
+      - 76254r
+      - Cartridge
+
+- type: entity
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  id: Bullet76254r
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
