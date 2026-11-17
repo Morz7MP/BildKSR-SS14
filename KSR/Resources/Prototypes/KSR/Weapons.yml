@@ -382,3 +382,59 @@
     damage:
       types:
         Piercing: 16
+
+- type: entity
+  parent: BaseShellShotgun
+  id: MakeshiftDrob
+  name: MakeshiftDrob
+  description: MakeshiftDrob
+  components:
+  - type: CartridgeAmmo
+    proto: PelletShotgunImprovisedSpread
+  - type: Sprite
+    layers:
+      - state: improvised
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "improvised"
+  - type: Tag
+    tags:
+      - MakeshiftDrob
+      - Cartridge
+
+- type: entity
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  id: BulletDrob
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 8
+
+- type: entity
+  name: MakeshiftShotgun
+  parent: BaseWeaponShotgun
+  id: MakeshiftShotgun
+  description: MakeshiftShotgun
+  components:
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+    storedOffset: 0,-5
+  - type: Sprite
+    sprite: KSR/MakeshiftShotgun.rsi
+  - type: Clothing
+    sprite: KSR/MakeshiftShotgun.rsi
+  - type: Gun
+    fireRate: 1
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - MakeshiftDrob
+    capacity: 1
+    proto: MakeshiftDrob
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
