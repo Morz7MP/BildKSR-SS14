@@ -420,3 +420,107 @@
     proto: Bullet15
     capacity: 1
     count: 1
+
+- type: entity
+  name: MP443
+  parent: BaseWeaponPistol
+  id: MP443
+  components:
+  - type: Sprite
+    sprite: KSR/MP-443.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ChamberMagazineAmmoProvider
+  - type: Gun
+    minAngle: 2
+    maxAngle: 8
+    angleIncrease: 1
+    angleDecay: 14
+    fireRate: 7.5
+    soundGunshot:
+      path: /Audio/KSR/mp443/mp443shot.ogg
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: mag443
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - mag443
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - 919
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+
+- type: entity
+  parent: BaseMagazinePistol
+  id: mag443
+  name: mag443
+  description: mag443
+  components:
+  - type: BallisticAmmoProvider
+    proto: 919
+    capacity: 18
+    whitelist:
+      tags:
+        - 919
+  - type: Item
+  - type: Sprite
+    sprite: KSR/mag443.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+  - type: Tag
+    tags:
+      - mag443
+  
+- type: entity
+  parent: BaseCartridgePistol
+  id: 919
+  name: 919
+  description: 919
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet919
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
+  - type: Tag
+    tags:
+      - 919
+      - Cartridge
+
+- type: entity
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  id: Bullet919
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
