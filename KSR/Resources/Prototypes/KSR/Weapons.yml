@@ -524,3 +524,120 @@
     damage:
       types:
         Piercing: 10
+
+- type: entity
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  id: Bullet76239
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 14
+        
+- type: entity
+  parent: BaseCartridgeLightRifle
+  id: 76239
+  name: 76239
+  description: 76239
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet76239
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"
+  - type: Tag
+    tags:
+      - 76239
+      - Cartridge
+
+- type: entity
+  parent: BaseMagazineLightRifle
+  id: magakm
+  name: magakm
+  description: magakm
+  components:
+  - type: BallisticAmmoProvider
+    proto: 76239
+    capacity: 30
+    whitelist:
+      tags:
+        - 76239
+  - type: Item
+  - type: Sprite
+    sprite: KSR/magakm.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 31
+    zeroVisible: false
+  - type: Appearance
+  - type: Tag
+    tags:
+      - magakm
+      
+- type: entity
+  parent: BaseWeaponRifle
+  id: Akm
+  name: Akm
+  description: Akm
+  components:
+  - type: Sprite
+    sprite: KSR/akm.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: KSR/akm.rsi
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -16
+  - type: Gun
+    angleIncrease: 3
+    angleDecay: 8
+    fireRate: 10.5
+    availableModes: 
+      - SemiAuto
+      - FullAuto
+    soundGunshot:
+      path: /Audio/KSR/Ak74m/vistrel.ogg
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/KSR/Ak74m/zatvor.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: magakm
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - magakm
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - 76239
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
