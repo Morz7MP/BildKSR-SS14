@@ -557,9 +557,9 @@
 
 - type: entity
   parent: BaseMagazineLightRifle
-  id: magakm
-  name: magakm
-  description: magakm
+  id: 6l10
+  name: 6l10
+  description: 6l10
   components:
   - type: BallisticAmmoProvider
     proto: 76239
@@ -569,7 +569,7 @@
         - 76239
   - type: Item
   - type: Sprite
-    sprite: KSR/magakm.rsi
+    sprite: KSR/6l10.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -582,7 +582,7 @@
   - type: Appearance
   - type: Tag
     tags:
-      - magakm
+      - 6l10
       
 - type: entity
   parent: BaseWeaponRifle
@@ -603,9 +603,9 @@
     minAngle: -20
     maxAngle: -16
   - type: Gun
-    angleIncrease: 3
+    angleIncrease: 2
     angleDecay: 8
-    fireRate: 10.5
+    fireRate: 10
     availableModes: 
       - SemiAuto
       - FullAuto
@@ -619,13 +619,13 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: magakm
+        startingItem: 6l10
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - magakm
+            - 6l10
       gun_chamber:
         name: Chamber
         priority: 1
