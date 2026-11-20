@@ -131,6 +131,9 @@
   components:
   - type: Sprite
     sprite: KSR/6b47.rsi
+  - type: Item
+    shape:
+    - 0,0,1,1
   - type: Armor
     modifiers:
       coefficients:
@@ -221,6 +224,9 @@
   components:
   - type: Sprite
     sprite: KSR/Kolpak_K-1_SB.rsi
+  - type: Item
+    shape:
+    - 0,0,1,1
   - type: Armor
     modifiers:
       coefficients:
