@@ -1,0 +1,34 @@
+- type: constructionGraph
+  id: Okno
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: Okno
+          completed:
+            - !type:AdminLog
+              message: "Construction"
+              impact: High
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: Glass
+              amount: 2
+              doAfter: 2.0
+
+    - node: Okno
+      entity: Okno
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog
+              message: "A okno was disassembled"
+            - !type:SpawnPrototype
+              prototype: SheetGlass
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 2

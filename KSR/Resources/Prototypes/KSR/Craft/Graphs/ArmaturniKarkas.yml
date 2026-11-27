@@ -1,0 +1,32 @@
+- type: constructionGraph
+  id: ArmaturniKarkas
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: ArmaturniKarkas
+          completed:
+            - !type:AdminLog
+              message: "Construction"
+              impact: High
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: MetalRod
+              amount: 4
+              doAfter: 0.5
+
+    - node: ArmaturniKarkas
+      entity: ArmaturniKarkas
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog
+              message: "A karkas was cut"
+            - !type:SpawnPrototype
+              prototype: PartRodMetal1
+              amount: 4
+            - !type:DeleteEntity
+          steps:
+            - tool: Cutting
+              doAfter: 0.5

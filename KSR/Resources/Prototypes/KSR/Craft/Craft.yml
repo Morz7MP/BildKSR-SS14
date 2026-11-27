@@ -1,0 +1,19 @@
+- type: construction
+  parent: BaseStructureFullTile
+  id: ArmaturniKarkas
+  description: ArmaturniKarkas-craft
+  graph: ArmaturniKarkas
+  targetNode: ArmaturniKarkas
+  conditions:
+  - !type:TileNotBlocked
+    failIfSpace: false
+
+- type: construction
+  parent: BaseStructureFullTile
+  id: Okno
+  description: Okno-craft
+  graph: Okno
+  targetNode: Okno
+  conditions:
+  - !type:TileNotBlocked
+    failIfSpace: false
