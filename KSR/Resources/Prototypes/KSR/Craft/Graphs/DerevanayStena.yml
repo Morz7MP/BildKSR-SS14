@@ -1,0 +1,34 @@
+- type: constructionGraph
+  id: DerevanayStena
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: DerevanayStena
+          completed:
+            - !type:AdminLog
+              message: "Construction"
+              impact: High
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: WoodPlank
+              amount: 4
+              doAfter: 0.75
+
+    - node: DerevanayStena
+      entity: DerevanayStena
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog
+              message: "A DerevanayStena was disassembled"
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank
+              amount: 4
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 3
