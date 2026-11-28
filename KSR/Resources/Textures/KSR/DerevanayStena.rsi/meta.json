@@ -1,0 +1,45 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "full"
+        },
+        {
+            "name": "woodwalls0",
+            "directions": 4
+        },
+        {
+            "name": "woodwalls1",
+            "directions": 4
+        },
+        {
+            "name": "woodwalls2",
+            "directions": 4
+        },
+        {
+            "name": "woodwalls3",
+            "directions": 4
+        },
+        {
+            "name": "woodwalls4",
+            "directions": 4
+        },
+        {
+            "name": "woodwalls5",
+            "directions": 4
+        },
+        {
+            "name": "woodwalls6",
+            "directions": 4
+        },
+        {
+            "name": "woodwalls7",
+            "directions": 4
+        }
+    ]
+}
