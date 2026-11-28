@@ -142,6 +142,11 @@ ent-ArmaturniKarkas = Арматурный каркас
 ent-Okno = Окно
     .desc = Обычное окно.
 
+ent-DerevanayStena = Деревянная стена
+    .desc = Стена из качественных досок.
+
 ArmaturniKarkas-craft = Хороший арматурный каркас из стали для заливки бетоном.
 
 Okno-craft = Обычное окно.
+
+DerevanayStena-craft = Стена из качественных досок.
