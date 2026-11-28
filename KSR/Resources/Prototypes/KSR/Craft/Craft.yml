@@ -17,3 +17,13 @@
   conditions:
   - !type:TileNotBlocked
     failIfSpace: false
+
+- type: construction
+  parent: BaseStructureFullTile
+  id: DerevanayStena
+  description: DerevanayStena-craft
+  graph: DerevanayStena
+  targetNode: DerevanayStena
+  conditions:
+  - !type:TileNotBlocked
+    failIfSpace: false
